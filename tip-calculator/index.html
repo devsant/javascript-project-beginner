@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora de Propinas</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3 class="title">Propina</h3>
+    <p class="text">Calculadora de propina al 15%</p>
+    <form action="" class="form">
+      <label for="ticket" name="ticket">
+        Monto total de la Factura
+        <input type="text" name="ticket" class="ticket" autocomplete=off>
+      </label>
+      <label for="consumer" name="consumer">
+        Cantidad de consumidores
+        <input type="text" name="consumer" class="consumer" autocomplete=off>
+      </label>
+      <button type="submit" class="btn">Calcular</button>
+    </form>
+    <div class="tip-result hidden">
+      <h3>Total + Propina del 15%</h3>
+      <h4 class="bill"></h4>
+      <h3>Monto por persona</h3>
+      <h4 class="individual"></h4>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
